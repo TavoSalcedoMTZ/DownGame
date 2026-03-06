@@ -1,34 +1,42 @@
-using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class PlayerDistanceDetector : MonoBehaviour
+public class PlayerDistanceDetector : PlayerComp
 {
     public DistanceInfo nextObstacle;
+    public float rayDistance = 10f;
 
-    
-
-    public void Update()
+    void Update()
     {
- 
         CheckDistance();
-
     }
 
-
-    public void CheckDistance()
+    void CheckDistance()
     {
-        
+        Vector3 dir = controller.GetDirectionVector();
+
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.right, out hit))
+
+        if (Physics.Raycast(transform.position, dir, out hit, rayDistance))
         {
-            if (hit.collider.gameObject.GetComponent<TargetObject>() != null)
+            TargetObject target;
+
+            if (hit.collider.TryGetComponent(out target))
             {
-                nextObstacle.typeTarget = hit.collider.gameObject.GetComponent<TargetObject>().typeTarget;
+                nextObstacle.typeTarget = target.typeTarget;
                 nextObstacle.distance = hit.distance;
             }
+            else
+            {
+                nextObstacle.typeTarget = TypeTarget.None;
+                nextObstacle.distance = Mathf.Infinity;
+            }
+        }
+        else
+        {
+            nextObstacle.typeTarget = TypeTarget.None;
+            nextObstacle.distance = Mathf.Infinity;
         }
 
+        Debug.DrawRay(transform.position, dir * rayDistance, Color.red);
     }
-
 }

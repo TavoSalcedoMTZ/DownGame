@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public PlayerMovement movement;
+    public PlayerDistanceDetector distanceDetector;
+    public PlayerActionController actionController;
+    public PlayerFloorDetector floorDetector;
+
+    public FDirection direction;
+    
+
+    public Vector3 GetDirectionVector()
     {
-        
+        return direction == FDirection.Left ? Vector3.left : Vector3.right;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeDirection()
     {
-        
+        direction = direction == FDirection.Left ? FDirection.Right : FDirection.Left;
     }
 }

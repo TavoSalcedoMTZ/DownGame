@@ -1,22 +1,40 @@
 using UnityEngine;
 
-public class PlayerActionController : MonoBehaviour
+public class PlayerActionController : PlayerComp
 {
-    public PlayerDistanceDetector distanceDetector;
-    public PlayerMovement movement;
-    public float distancetoChangeDirection = 1f;
+    public ActionRule[] rules;
 
     void Update()
     {
-        CheckAction();
+        EvaluateRules();
     }
 
-    void CheckAction()
+    void EvaluateRules()
     {
-        if (distanceDetector.nextObstacle.typeTarget == TypeTarget.Wall &&
-            distanceDetector.nextObstacle.distance <= distancetoChangeDirection)
+        DistanceInfo info = controller.distanceDetector.nextObstacle;
+
+        foreach (var rule in rules)
         {
-            movement.ChangeDirection();
+            if (info.typeTarget == rule.targetType &&
+                info.distance <= rule.triggerDistance)
+            {
+                ExecuteAction(rule.action);
+                return;
+            }
+        }
+    }
+
+    void ExecuteAction(PlayerActionType action)
+    {
+        switch (action)
+        {
+            case PlayerActionType.ChangeDirection:
+                controller.ChangeDirection();
+                break;
+
+            case PlayerActionType.Stop:
+                controller.movement.Stop();
+                break;
         }
     }
 }

@@ -1,29 +1,79 @@
+using System.Collections;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : PlayerComp
 {
-
     public Rigidbody rb;
-    public FDirection direction;
-    public float speed;
+    public Collider playerCollider;
 
+    public float speed = 5f;
 
+    public bool canMove = true;
+    public bool canDown = true;
 
+    void Update()
+    {
+        if (canMove)
+            Move();
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Down();
+        }
+    }
 
     public void Move()
     {
-        rb.linearVelocity = new Vector3((direction == FDirection.Left ? -1 : 1) * speed, rb.linearVelocity.y, rb.linearVelocity.z);
+        Vector3 dir = controller.GetDirectionVector();
 
+        rb.linearVelocity = new Vector3(
+            dir.x * speed,
+            rb.linearVelocity.y,
+            rb.linearVelocity.z
+        );
     }
-    public void Update()
+
+    public void Stop()
     {
-        Move();
+        rb.linearVelocity = Vector3.zero;
+        canMove = false;
     }
 
-    public void ChangeDirection()
+    public void Resume()
     {
-        direction = direction == FDirection.Left ? FDirection.Right : FDirection.Left;
+        canMove = true;
     }
 
+    public void Down()
+    {
+        if (canDown)
+        {
+            StartCoroutine(DownRoutine());
+        }
+    }
 
+    IEnumerator DownRoutine()
+    {
+        Stop();
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
+        {
+            controller.floorDetector.IgnoreFloor(hit.collider);
+        }
+
+        canDown = false;
+        playerCollider.isTrigger = true;
+
+        yield return new WaitUntil(() => controller.floorDetector.isGrounded == false);
+        yield return new WaitUntil(() => controller.floorDetector.isGrounded == true);
+
+        playerCollider.isTrigger = false;
+
+        controller.floorDetector.ResetIgnoredFloor();
+
+        canDown = true;
+
+        Resume();
+    }
 }
