@@ -2,5 +2,8 @@ public enum PlayerActionType
 {
     None,
     ChangeDirection,
-    Stop
+    Stop,
+    DetectEnemy,
+
+
 }

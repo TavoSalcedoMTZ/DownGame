@@ -35,6 +35,10 @@ public class PlayerActionController : PlayerComp
             case PlayerActionType.Stop:
                 controller.movement.Stop();
                 break;
+             case PlayerActionType.DetectEnemy:
+                controller.EnemyNear();
+
+                break;
         }
     }
 }

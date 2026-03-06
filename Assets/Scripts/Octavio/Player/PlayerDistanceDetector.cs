@@ -24,11 +24,13 @@ public class PlayerDistanceDetector : PlayerComp
             {
                 nextObstacle.typeTarget = target.typeTarget;
                 nextObstacle.distance = hit.distance;
+                nextObstacle.GO_Ref = target.gameObject;
             }
             else
             {
                 nextObstacle.typeTarget = TypeTarget.None;
                 nextObstacle.distance = Mathf.Infinity;
+                nextObstacle.GO_Ref = null;
             }
         }
         else
@@ -38,5 +40,19 @@ public class PlayerDistanceDetector : PlayerComp
         }
 
         Debug.DrawRay(transform.position, dir * rayDistance, Color.red);
+    }
+
+
+    public EnemyController DetectEnemy()
+    {
+        if (nextObstacle.typeTarget == TypeTarget.Enemy)
+        {
+            nextObstacle.GO_Ref.TryGetComponent(out EnemyController enemy);
+
+
+
+            return enemy;
+        }
+        return null;
     }
 }

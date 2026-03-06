@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public PlayerDistanceDetector distanceDetector;
     public PlayerActionController actionController;
     public PlayerFloorDetector floorDetector;
+    public PlayerAttack attack;
 
     public FDirection direction;
     
@@ -18,5 +19,25 @@ public class PlayerController : MonoBehaviour
     public void ChangeDirection()
     {
         direction = direction == FDirection.Left ? FDirection.Right : FDirection.Left;
+    }
+
+    public void EnemyNear() {
+
+        EnemyController enemy = distanceDetector.DetectEnemy();
+
+        if(enemy != null)
+        {
+            attack.SetEnemy(enemy);
+            enemy.enemyUI.ShowParryIndicator();
+        }
+        else
+        {
+            attack.SetEnemy(null);
+        }
+
+
+
+
+
     }
 }

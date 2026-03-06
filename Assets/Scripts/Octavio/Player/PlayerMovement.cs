@@ -15,11 +15,6 @@ public class PlayerMovement : PlayerComp
     {
         if (canMove)
             Move();
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Down();
-        }
     }
 
     public void Move()
