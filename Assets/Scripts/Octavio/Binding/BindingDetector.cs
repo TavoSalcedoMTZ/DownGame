@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BindingDetector : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class BindingDetector : MonoBehaviour
     public float holdTime = 0.4f;
     public float comboResetTime = 0.35f;
 
+    public float timeTo30 = 30f;
+    public float timeTo60 = 60f;
+
+    float lastInputTime;
+
     float pressTime;
     float lastTapTime;
 
@@ -16,10 +22,26 @@ public class BindingDetector : MonoBehaviour
     bool pressed;
     bool holding;
 
+    bool fired30;
+    bool fired60;
+
+    [Header("Events")]
+    public UnityEvent On30s_Inactive;
+    public UnityEvent On60s_Inactive;
+
+    void Start()
+    {
+        lastInputTime = Time.time;
+    }
+
     void Update()
     {
+        CheckLastInput();
+
         if (Input.GetMouseButtonDown(0))
         {
+            RegisterInput();
+
             pressed = true;
             holding = false;
             pressTime = Time.time;
@@ -37,6 +59,8 @@ public class BindingDetector : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
+            RegisterInput();
+
             pressed = false;
 
             if (holding)
@@ -50,6 +74,14 @@ public class BindingDetector : MonoBehaviour
 
             TriggerTapAction(tapCount);
         }
+    }
+
+    void RegisterInput()
+    {
+        lastInputTime = Time.time;
+
+        fired30 = false;
+        fired60 = false;
     }
 
     void TriggerTapAction(int count)
@@ -68,5 +100,22 @@ public class BindingDetector : MonoBehaviour
 
         if (best != null)
             best.action?.Invoke();
+    }
+
+    void CheckLastInput()
+    {
+        float idleTime = Time.time - lastInputTime;
+
+        if (!fired30 && idleTime >= timeTo30)
+        {
+            fired30 = true;
+            On30s_Inactive?.Invoke();
+        }
+
+        if (!fired60 && idleTime >= timeTo60)
+        {
+            fired60 = true;
+            On60s_Inactive?.Invoke();
+        }
     }
 }

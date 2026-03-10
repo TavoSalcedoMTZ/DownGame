@@ -17,37 +17,39 @@ public class PlayerFloorDetector : PlayerComp
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, rayDistance))
-        {
-            if (hit.collider == ignoredFloor)
-                return;
+        bool hitSomething = Physics.Raycast(transform.position, Vector3.down, out hit, rayDistance);
 
-            isGrounded = true;
-            Checkfloor(hit);
-        }
-        else
+        if (!hitSomething)
         {
             isGrounded = false;
+            return;
         }
+
+        if (hit.collider == ignoredFloor)
+        {
+            isGrounded = false;
+            return;
+        }
+
+        isGrounded = true;
+
+        if (!CheckingFloor)
+            CheckFloor(hit);
 
         Debug.DrawRay(transform.position, Vector3.down * rayDistance, Color.green);
     }
 
-    void Checkfloor(RaycastHit hit)
+    void CheckFloor(RaycastHit hit)
     {
-        if (CheckingFloor) return;
-
         if (hit.collider.TryGetComponent(out Floor target))
         {
-            switch (target.type)
+            if (target.type == FloorType.Pass)
             {
-                case FloorType.Pass:
-                    controller.movement.canDown = true;
-                    break;
-
-                case FloorType.Block:
-                    controller.movement.canDown = false;
-                    break;
+                controller.movement.canDown = true;
+            }
+            else if (target.type == FloorType.Block)
+            {
+                controller.movement.canDown = false;
             }
         }
     }
