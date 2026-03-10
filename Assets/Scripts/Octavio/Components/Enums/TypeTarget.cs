@@ -6,4 +6,6 @@ public enum TypeTarget
     Wall,
     Enemy,
     Boss,
+    ExclusiveEnemyWall,
+    ExclusivePlayerWall,
 }

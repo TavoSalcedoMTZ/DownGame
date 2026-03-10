@@ -22,7 +22,8 @@ public class EnemyBrain1 : AIBrain
         DistanceInfo info = detector.nextObstacle;
 
         if (info.typeTarget == TypeTarget.Wall ||
-            info.typeTarget == TypeTarget.Enemy)
+            info.typeTarget == TypeTarget.Enemy || 
+            info.typeTarget==TypeTarget.ExclusiveEnemyWall)
         {
             if (info.distance <= minDistance)
             {
