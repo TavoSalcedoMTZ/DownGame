@@ -57,10 +57,10 @@ public class EnemyBrain2 : AIBrain
 
         controller.movement.Stop();
         controller.col.isTrigger = true;
-        controller.movement.rb.useGravity = false;
+      
         yield return new WaitForSeconds(randomDuration);
 
-        controller.movement.rb.useGravity = true;
+    
         controller.col.isTrigger = false;
         controller.movement.Resume();
 
