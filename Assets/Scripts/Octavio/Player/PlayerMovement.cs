@@ -21,8 +21,10 @@ public class PlayerMovement : PlayerComp
     {
         Vector3 dir = controller.GetDirectionVector();
 
+        float scaledSpeed = speed * WorldSettings.movementScale;
+
         rb.linearVelocity = new Vector3(
-            dir.x * speed,
+            dir.x * scaledSpeed,
             rb.linearVelocity.y,
             rb.linearVelocity.z
         );

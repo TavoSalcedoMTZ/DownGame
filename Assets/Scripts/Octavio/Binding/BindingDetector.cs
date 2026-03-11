@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -25,9 +26,13 @@ public class BindingDetector : MonoBehaviour
     bool fired30;
     bool fired60;
 
+    bool isActive = true;
+
     [Header("Events")]
     public UnityEvent On30s_Inactive;
     public UnityEvent On60s_Inactive;
+
+    public Action<bool> ActiveChanged;
 
     void Start()
     {
@@ -82,6 +87,9 @@ public class BindingDetector : MonoBehaviour
 
         fired30 = false;
         fired60 = false;
+
+        if (!isActive)
+            SetActiveState(true);
     }
 
     void TriggerTapAction(int count)
@@ -98,8 +106,7 @@ public class BindingDetector : MonoBehaviour
             }
         }
 
-        if (best != null)
-            best.action?.Invoke();
+        best?.action?.Invoke();
     }
 
     void CheckLastInput()
@@ -110,6 +117,7 @@ public class BindingDetector : MonoBehaviour
         {
             fired30 = true;
             On30s_Inactive?.Invoke();
+            SetActiveState(false);
         }
 
         if (!fired60 && idleTime >= timeTo60)
@@ -117,5 +125,15 @@ public class BindingDetector : MonoBehaviour
             fired60 = true;
             On60s_Inactive?.Invoke();
         }
+    }
+
+    void SetActiveState(bool state)
+    {
+        if (isActive == state)
+            return;
+
+        isActive = state;
+
+        ActiveChanged?.Invoke(state);
     }
 }
