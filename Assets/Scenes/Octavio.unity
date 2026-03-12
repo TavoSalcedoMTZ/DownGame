@@ -5361,7 +5361,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.019797718, y: -0.02967811, z: 0.0005993541, w: 0.9993633}
-  m_LocalPosition: {x: 1.5690683, y: 2.963647, z: -10.78101}
+  m_LocalPosition: {x: 0.5707781, y: 2.9636464, z: -10.78101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15988,7 +15988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1813473, y: 0.22600001}
   m_AnchorMax: {x: 0.8182963, y: 0.8160192}
-  m_AnchoredPosition: {x: -8.5000305, y: 6.0477905}
+  m_AnchoredPosition: {x: -8.5, y: 6.0477295}
   m_SizeDelta: {x: -0.60546875, y: -23.621338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088410132
@@ -16207,6 +16207,18 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5817596349614910629, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817596349614910629, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817596349614910629, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.39442447
+      objectReference: {fileID: 0}
     - target: {fileID: 6392491402937755024, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
       propertyPath: playOnAwake
       value: 1
@@ -16226,6 +16238,18 @@ PrefabInstance:
     - target: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.75698614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8301887
       objectReference: {fileID: 0}
     - target: {fileID: 8194992990867289334, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16642,7 +16666,7 @@ Transform:
   m_GameObject: {fileID: 1436142677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46829, y: 5.81, z: -0.676}
+  m_LocalPosition: {x: -0.53, y: 5.81, z: -0.676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16794,6 +16818,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   CanAttack: 0
+  IsAttacking: 0
 --- !u!136 &1436142689
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17254,7 +17279,7 @@ MonoBehaviour:
     ScreenPosition: {x: 0, y: -0.33}
     DeadZone:
       Enabled: 1
-      Size: {x: 0.8, y: 0.3}
+      Size: {x: 0.98, y: 0.3}
     HardLimits:
       Enabled: 0
       Size: {x: 1.78, y: 0.92}
@@ -17319,7 +17344,7 @@ Transform:
   m_GameObject: {fileID: 1898960713}
   serializedVersion: 2
   m_LocalRotation: {x: 0.019797718, y: -0.02967811, z: 0.0005993541, w: 0.9993633}
-  m_LocalPosition: {x: 1.5690683, y: 2.963647, z: -10.78101}
+  m_LocalPosition: {x: 0.5707781, y: 2.9636464, z: -10.78101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17499,6 +17524,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 764522436923883189, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4584457140742252552, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
       propertyPath: enemyFX
       value: 
@@ -17507,6 +17536,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8870063012310000860, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8023715
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870063012310000860, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870063012310000860, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870063012310000860, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: cbb6f419bbe7c6e4d9ce7e0322aa267d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
