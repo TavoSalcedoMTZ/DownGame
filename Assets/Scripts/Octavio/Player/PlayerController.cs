@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
     public PlayerActionController actionController;
     public PlayerFloorDetector floorDetector;
     public PlayerAttack attack;
+    public PlayerMeshController meshController;
 
     public FDirection direction;
-    
 
     public Vector3 GetDirectionVector()
     {
@@ -19,25 +19,26 @@ public class PlayerController : MonoBehaviour
     public void ChangeDirection()
     {
         direction = direction == FDirection.Left ? FDirection.Right : FDirection.Left;
+
+        meshController.UpdateDirection(direction);
     }
 
-    public void EnemyNear() {
+    public void EnemyNear()
+    {
+        if (attack.IsAttacking)
+            return;
 
         EnemyController enemy = distanceDetector.DetectEnemy();
 
-        if(enemy != null)
+        if (enemy != null)
         {
             attack.SetEnemy(enemy);
             enemy.enemyUI.ShowParryIndicator();
+            attack.CanAttack = true;
         }
         else
         {
             attack.SetEnemy(null);
         }
-
-
-
-
-
     }
 }

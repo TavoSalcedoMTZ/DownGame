@@ -1,21 +1,33 @@
-
 using UnityEngine;
 using UnityEngine.Events;
+
 public class PlayerAttack : PlayerComp
 {
     public UnityEvent OnAttack;
+
     private EnemyController enemyNear;
+
+    public bool CanAttack;
+    public bool IsAttacking;
+
     public void Attack()
     {
-        if (enemyNear != null)
-        {
-            enemyNear.TakeDamage();
-            OnAttack?.Invoke();
+        if (enemyNear == null) return;
+        if (!CanAttack) return;
+        if (IsAttacking) return;
 
-        }
-        
+        IsAttacking = true;
+        CanAttack = false;
+
+        SequenceController.Instance.PlayEnemyDefeatSequence(enemyNear, this);
+
+        enemyNear = null;
     }
 
-    public void SetEnemy(EnemyController enemyNear) => this.enemyNear = enemyNear;
+    public void SetEnemy(EnemyController enemyNear)
+    {
+        if (IsAttacking) return;
 
+        this.enemyNear = enemyNear;
+    }
 }
