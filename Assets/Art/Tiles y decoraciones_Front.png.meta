@@ -1,0 +1,1622 @@
+fileFormatVersion: 2
+guid: b044f2e640cd44145882c61a3a4cb6a1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1322
+        width: 87
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fa9614c96498941840faf51e6977ef
+      internalID: 1835525334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1317
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3b86a271049d3428b4ff38ee7ace91
+      internalID: -1445823616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1318
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9baa7f3d5d61aaf40800ef371235d7c7
+      internalID: 1816080145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1318
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2623f8b002245ca4a9665b66572ad1d9
+      internalID: -1165645923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_9
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1298
+        width: 93
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8075f05cd51e0c243828b8ea0b8a0d3e
+      internalID: -894110022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_10
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1307
+        width: 87
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9688999781348f340b95132992c6abb0
+      internalID: 1722078508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_11
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1192
+        width: 186
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985be6273af01df42a0381b7df721e0f
+      internalID: -742211919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_12
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1302
+        width: 115
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a6d62b893733747911e32ce948bbb6
+      internalID: -1419166460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1227
+        width: 93
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2938c3173a2f0504da8e37aefc5c72de
+      internalID: 617213687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1227
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c48ae3e2362ce4abb25f553319352d
+      internalID: -733563764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1226
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aedd657d7510c445a5f6ceea2a3c06f
+      internalID: -711975773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1226
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f255ec7971309d42b743131e1e0e294
+      internalID: -1118320496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_17
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1199
+        width: 116
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e4c1d49bafb0d4daffa0c7ee4c5617
+      internalID: -778826633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_18
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1190
+        width: 110
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31371ad1d72e6064789010a6d0d04988
+      internalID: -2089920820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1131
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45406213546eb74d83617f3380fa901
+      internalID: -1986936208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1131
+        width: 89
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f368df5454b69449ba5d2bfa134a87
+      internalID: -730786290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1131
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b45bdaf0469c444b4bdd77b26b8096
+      internalID: 1550729939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_22
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1141
+        width: 91
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b09262cb8d4b849bd06e8b53935674
+      internalID: 1333899479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_23
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1078
+        width: 119
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac58942854061643a546160220d8fbd
+      internalID: -725139260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_24
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 958
+        width: 135
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85720d25be738f4eb949167b58996da
+      internalID: -129699286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_25
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1079
+        width: 166
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e38d4089d609084692a068b4481514b
+      internalID: -1091320364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1032
+        width: 97
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7ccb6078c7b85419428ef8102bffa3
+      internalID: -197970471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1063
+        width: 87
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b291e48dc7037c34b977831705ca9fa8
+      internalID: 1284343788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1067
+        width: 92
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060db25109980e64e8c3215b17be6243
+      internalID: 1307265367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_30
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1031
+        width: 132
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6509780e242b646b5f07f75f4805f0
+      internalID: 583389457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_31
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1030
+        width: 137
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a5e2d100a5e84419f345c4ea2da12d
+      internalID: -687890027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_32
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 971
+        width: 130
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529d3ca8aebdd044ea917a49e85a668a
+      internalID: -76020317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_33
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 949
+        width: 175
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c3291fe58ac1948812cb9881d0d5c5
+      internalID: 862687184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_34
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 967
+        width: 112
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84d3a24fa2d876449225fd6822651e4
+      internalID: 1950848657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_35
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 958
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b699348b5c5e1419f3350f1d2e48a0
+      internalID: -1680509509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_37
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 951
+        width: 126
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efceb21d7abe7ef4f9b37a4a7ee00f50
+      internalID: -343686451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_38
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 872
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67ed0c4d78ccd541aa47102322711a2
+      internalID: -656702679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 685
+        width: 140
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26597fb6b2d8aa344b1bdb69c1ad6ceb
+      internalID: 212193289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_41
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 762
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cec007586c6294897c8994a3a5efe6
+      internalID: -1550083719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_42
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 763
+        width: 132
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80de35cc989a7d3458d2dfbf99790fbf
+      internalID: -1830210095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_43
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 689
+        width: 275
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ee3d4a65172474c9d19e18e89d13e3
+      internalID: 48143501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_44
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 771
+        width: 279
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581b1ce317fec8a4cb2c9a1f8a1b9a31
+      internalID: 2146392564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_45
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 742
+        width: 217
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04419801222595a4d8483fb8870d4a9d
+      internalID: -801487629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_46
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 566
+        width: 112
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db25994dced88e34e9ee65781bce7e86
+      internalID: -852998254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_47
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 666
+        width: 106
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0184f2681817c843bfcf78495e6771a
+      internalID: -730421919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 663
+        width: 141
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923d5a716802eb4409b1345f48922ef7
+      internalID: 1989439423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_49
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 618
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f14917077b6bb44b76295ea872965a
+      internalID: 1193916633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_50
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 619
+        width: 167
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916e721c10659a14cacfb85369f63bbe
+      internalID: 344643310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_51
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 609
+        width: 228
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac894ffd236a0443a82f77a7b1a8e3c
+      internalID: -1341173638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_52
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 561
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0126d9964f7dca943a56fd9076f3685f
+      internalID: -1091678484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_53
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 566
+        width: 95
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9105dddb0e3ac254ebf2dbbc5c5c3ff1
+      internalID: 235486998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_54
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 565
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d113c401d2efb6428aa7019f7e604ce
+      internalID: -1602106138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_55
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 525
+        width: 294
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6165e0c573c7ace4baaf9e7988655951
+      internalID: 1412058030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_56
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 502
+        width: 208
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0c6e2a1d0193c4592d4438bd5ab2db
+      internalID: -495918216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_57
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 420
+        width: 152
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb4883acc9120a4cb2bde8034f920b3
+      internalID: -809161950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_58
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 376
+        width: 106
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73f033082a12ec4aa647c4a8f1d8b17
+      internalID: -688483895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_59
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 329
+        width: 172
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038db28f83ef61441bcff062c511ded9
+      internalID: -2022567783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_60
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 245
+        width: 202
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb98ea0eba5ca7a4bbc1a2a683db0dd3
+      internalID: -1506917384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_61
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 384
+        width: 110
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf856266452e14b43ba43f5bfeaa5deb
+      internalID: 950366787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_62
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 344
+        width: 54
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe27248a42e49d42a5e1fa6d05c94c8
+      internalID: -162604183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_63
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 184
+        width: 94
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426734f491496ed46ac040522296c013
+      internalID: -1903214175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_64
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 318
+        width: 84
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4650a6611944364189c727c2dfd653c
+      internalID: 2034462874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_65
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 310
+        width: 67
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cb886d5a6a36d4f911a1fd20ebc824
+      internalID: -1702115405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 260
+        width: 116
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77977f5daa2b5a845b3398da71be2156
+      internalID: 1436018607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_67
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 171
+        width: 201
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea68c105e3133b64785be3a34613482e
+      internalID: 677410791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_68
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 179
+        width: 238
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c422b8aa5146948a5694b5934cf7d8
+      internalID: -1431747399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_69
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 187
+        width: 98
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d09e3ef5ef20794aa0704880cf46cf8
+      internalID: -1662082558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_70
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 186
+        width: 89
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae01c254a408244299675aa55334db8
+      internalID: -536406161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_71
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 183
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b5788727f064041a1ed41c4b34280e
+      internalID: -953284990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles y decoraciones_Front_72
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 213
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907ede7292dad5c49aa76eebb237d8e2
+      internalID: -2039080598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 38b77fd32d9dd624d935e049d75d5c2f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":111.0},"gridSpriteOffset":{"x":67.0,"y":4.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Tiles y decoraciones_Front_0: 947446844
+      Tiles y decoraciones_Front_1: 1750892620
+      Tiles y decoraciones_Front_10: 1722078508
+      Tiles y decoraciones_Front_11: -742211919
+      Tiles y decoraciones_Front_12: -1419166460
+      Tiles y decoraciones_Front_13: 617213687
+      Tiles y decoraciones_Front_14: -733563764
+      Tiles y decoraciones_Front_15: -711975773
+      Tiles y decoraciones_Front_16: -1118320496
+      Tiles y decoraciones_Front_17: -778826633
+      Tiles y decoraciones_Front_18: -2089920820
+      Tiles y decoraciones_Front_19: -1986936208
+      Tiles y decoraciones_Front_2: 1350132965
+      Tiles y decoraciones_Front_20: -730786290
+      Tiles y decoraciones_Front_21: 1550729939
+      Tiles y decoraciones_Front_22: 1333899479
+      Tiles y decoraciones_Front_23: -725139260
+      Tiles y decoraciones_Front_24: -129699286
+      Tiles y decoraciones_Front_25: -1091320364
+      Tiles y decoraciones_Front_26: -197970471
+      Tiles y decoraciones_Front_27: 1284343788
+      Tiles y decoraciones_Front_28: 1307265367
+      Tiles y decoraciones_Front_29: 1544823797
+      Tiles y decoraciones_Front_3: -836126346
+      Tiles y decoraciones_Front_30: 583389457
+      Tiles y decoraciones_Front_31: -687890027
+      Tiles y decoraciones_Front_32: -76020317
+      Tiles y decoraciones_Front_33: 862687184
+      Tiles y decoraciones_Front_34: 1950848657
+      Tiles y decoraciones_Front_35: -1680509509
+      Tiles y decoraciones_Front_36: 1386763437
+      Tiles y decoraciones_Front_37: -343686451
+      Tiles y decoraciones_Front_38: -656702679
+      Tiles y decoraciones_Front_39: -1547036939
+      Tiles y decoraciones_Front_4: 1075690053
+      Tiles y decoraciones_Front_40: 212193289
+      Tiles y decoraciones_Front_41: -1550083719
+      Tiles y decoraciones_Front_42: -1830210095
+      Tiles y decoraciones_Front_43: 48143501
+      Tiles y decoraciones_Front_44: 2146392564
+      Tiles y decoraciones_Front_45: -801487629
+      Tiles y decoraciones_Front_46: -852998254
+      Tiles y decoraciones_Front_47: -730421919
+      Tiles y decoraciones_Front_48: 1989439423
+      Tiles y decoraciones_Front_49: 1193916633
+      Tiles y decoraciones_Front_5: 1835525334
+      Tiles y decoraciones_Front_50: 344643310
+      Tiles y decoraciones_Front_51: -1341173638
+      Tiles y decoraciones_Front_52: -1091678484
+      Tiles y decoraciones_Front_53: 235486998
+      Tiles y decoraciones_Front_54: -1602106138
+      Tiles y decoraciones_Front_55: 1412058030
+      Tiles y decoraciones_Front_56: -495918216
+      Tiles y decoraciones_Front_57: -809161950
+      Tiles y decoraciones_Front_58: -688483895
+      Tiles y decoraciones_Front_59: -2022567783
+      Tiles y decoraciones_Front_6: -1445823616
+      Tiles y decoraciones_Front_60: -1506917384
+      Tiles y decoraciones_Front_61: 950366787
+      Tiles y decoraciones_Front_62: -162604183
+      Tiles y decoraciones_Front_63: -1903214175
+      Tiles y decoraciones_Front_64: 2034462874
+      Tiles y decoraciones_Front_65: -1702115405
+      Tiles y decoraciones_Front_66: 1436018607
+      Tiles y decoraciones_Front_67: 677410791
+      Tiles y decoraciones_Front_68: -1431747399
+      Tiles y decoraciones_Front_69: -1662082558
+      Tiles y decoraciones_Front_7: 1816080145
+      Tiles y decoraciones_Front_70: -536406161
+      Tiles y decoraciones_Front_71: -953284990
+      Tiles y decoraciones_Front_72: -2039080598
+      Tiles y decoraciones_Front_8: -1165645923
+      Tiles y decoraciones_Front_9: -894110022
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
