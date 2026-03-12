@@ -47,6 +47,7 @@ public class PlayerMovement : PlayerComp
         {
             StartCoroutine(DownRoutine());
         }
+        Debug.Log("Down");
     }
 
     IEnumerator DownRoutine()
