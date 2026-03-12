@@ -25,7 +25,7 @@ public class EnemyFX : MonoBehaviour
         Mesh.SetActive(false);
         AfterDie.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(0.5F);
+        yield return new WaitForSecondsRealtime(0.5F);
         Destroy(gameObject);
 
     }

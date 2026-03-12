@@ -22,6 +22,8 @@ public class PlayerAttack : PlayerComp
         SequenceController.Instance.PlayEnemyDefeatSequence(enemyNear, this);
 
         enemyNear = null;
+        enemyNear.gameObject.GetComponent<Rigidbody>().useGravity = false;
+        enemyNear.gameObject.GetComponent<Collider>().enabled = false;
     }
 
     public void SetEnemy(EnemyController enemyNear)
