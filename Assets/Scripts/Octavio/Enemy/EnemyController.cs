@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class EnemyController : MonoBehaviour
 {
     public EnemyMovement movement;
@@ -26,5 +27,13 @@ public class EnemyController : MonoBehaviour
             default:
                 return Vector3.zero;
         }
+    }
+
+    public void Flip()
+    {
+        if (direction == FDirection.Left)
+          direction = FDirection.Right;
+        else
+            direction = FDirection.Left;
     }
 }
