@@ -2,27 +2,30 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    [Header("Configuraci�n")]
+    [Header("Configuración")]
     public float velocidad = 10f;
-    public float tiempoDeVida = 5f; // Por si no choca con nada, que se destruya eventualmente
+    public float tiempoDeVida = 5f;
+
+    Rigidbody rb;
+    float vida;
 
     void Start()
     {
-        // Le damos impulso hacia adelante en el momento que nace
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.linearVelocity = transform.right * velocidad;
-
-        // Destruye el proyectil despu�s de unos segundos como medida de seguridad
-        Destroy(gameObject, tiempoDeVida);
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Esta funci�n se activa cuando el Collider choca con otro Collider
+    void Update()
+    {
+        rb.linearVelocity = transform.right * velocidad * WorldSettings.movementScale;
+
+        vida += Time.deltaTime * WorldSettings.movementScale;
+
+        if (vida >= tiempoDeVida)
+            Destroy(gameObject);
+    }
+
     void OnCollisionEnter(Collision choque)
     {
-        // Opcional: Aqu� podr�as comprobar con qu� choc�. 
-        // Ejemplo: if (choque.gameObject.CompareTag("Player")) { // hacer da�o }
-
-        // Destruimos el proyectil al impactar
         Destroy(gameObject);
     }
 }

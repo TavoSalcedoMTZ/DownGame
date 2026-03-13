@@ -3,15 +3,17 @@ using UnityEngine;
 public class PenduloDI : MonoBehaviour
 {
     [Header("Configuración del Péndulo")]
-    public float velocidad = 2.0f; // Qué tan rápido se balancea
-    public float anguloMaximo = 60.0f; // El límite de grados hacia la izquierda/derecha
+    public float velocidad = 2.0f;
+    public float anguloMaximo = 60.0f;
+
+    float tiempo;
 
     void Update()
     {
-        // Calculamos el ángulo usando la función Seno para un movimiento suave
-        float angulo = anguloMaximo * Mathf.Sin(Time.time * velocidad);
+        tiempo += Time.deltaTime * WorldSettings.movementScale;
 
-        // Aplicamos la rotación (asumiendo que se balancea en el eje Z)
-        transform.localRotation = Quaternion.Euler(0, 0, angulo);
+        float angulo = anguloMaximo * Mathf.Sin(tiempo * velocidad);
+
+        transform.localRotation = Quaternion.Euler(0f, 0f, angulo);
     }
 }

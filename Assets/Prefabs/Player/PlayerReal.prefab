@@ -303,7 +303,7 @@ MonoBehaviour:
     triggerDistance: 0.3643464
     action: 1
   - targetType: 2
-    triggerDistance: 0.4715852
+    triggerDistance: 1
     action: 3
   - targetType: 5
     triggerDistance: 0.4715852
@@ -568,11 +568,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationController
   animator: {fileID: 7285414454486479702}
-  rb: {fileID: 9031139147606808696}
-  usarCaminar: 1
-  usarDescender: 1
-  parametroCaminar: isWalking
-  parametroDescender: isDescending
+  floorDetector: {fileID: 0}
+  walkParam: isWalking
+  descendParam: isDescending
 --- !u!95 &7285414454486479702 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: bed1b60fc927bf94ca347ae12f6aac7e, type: 3}

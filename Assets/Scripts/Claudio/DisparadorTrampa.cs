@@ -3,27 +3,27 @@ using UnityEngine;
 public class DisparadorTrampa : MonoBehaviour
 {
     [Header("Referencias")]
-    public GameObject prefabProyectil; // Arrastra aquí tu prefab del proyectil
-    public Transform puntoDeDisparo;   // Arrastra aquí el GameObject vacío que creaste
+    public GameObject prefabProyectil;
+    public Transform puntoDeDisparo;
 
     [Header("Ritmo de Fuego")]
-    public float tiempoEntreDisparos = 2f; // Dispara cada 2 segundos
-    private float tiempoSiguienteDisparo;
+    public float tiempoEntreDisparos = 2f;
+
+    float timer;
 
     void Update()
     {
-        // Verificamos si ya es tiempo de disparar de nuevo
-        if (Time.time >= tiempoSiguienteDisparo)
+        timer += Time.deltaTime * WorldSettings.movementScale;
+
+        if (timer >= tiempoEntreDisparos)
         {
             Disparar();
-            // Calculamos cuándo será el próximo disparo
-            tiempoSiguienteDisparo = Time.time + tiempoEntreDisparos;
+            timer = 0f;
         }
     }
 
     void Disparar()
     {
-        // Instanciamos (creamos) el proyectil en la posición y rotación del PuntoDeDisparo
         Instantiate(prefabProyectil, puntoDeDisparo.position, puntoDeDisparo.rotation);
     }
 }
