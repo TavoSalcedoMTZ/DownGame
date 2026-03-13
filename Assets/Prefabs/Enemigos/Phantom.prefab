@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 6737079900872815327}
   m_Layer: 0
   m_Name: Phantom
-  m_TagString: Untagged
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,6 +326,7 @@ MonoBehaviour:
   col: {fileID: 6737079900872815327}
   enemyFX: {fileID: 0}
   direction: 0
+  IsDead: 0
 --- !u!114 &2513713635329823825
 MonoBehaviour:
   m_ObjectHideFlags: 0

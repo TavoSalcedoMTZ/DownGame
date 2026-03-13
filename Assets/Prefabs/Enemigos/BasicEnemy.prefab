@@ -39514,7 +39514,7 @@ GameObject:
   - component: {fileID: 6755808863127018778}
   m_Layer: 0
   m_Name: BasicEnemy
-  m_TagString: Untagged
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39557,6 +39557,7 @@ MonoBehaviour:
   col: {fileID: 7575852975579320992}
   enemyFX: {fileID: 6755808863127018778}
   direction: 0
+  IsDead: 0
 --- !u!114 &2513713635329823825
 MonoBehaviour:
   m_ObjectHideFlags: 0

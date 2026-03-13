@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class EnemyController : MonoBehaviour
 {
     public EnemyMovement movement;
@@ -10,12 +9,20 @@ public class EnemyController : MonoBehaviour
 
     public FDirection direction;
 
+    public bool IsDead;
+
     public void TakeDamage()
     {
-        movement.Stop();
-        enemyFX.StartDieSequence();
+        if (IsDead) return;
 
-        
+        IsDead = true;
+
+        movement.Stop();
+
+        if (col != null)
+            col.enabled = false;
+
+        enemyFX.StartDieSequence();
     }
 
     public Vector3 GetDirectionVector()
@@ -36,17 +43,9 @@ public class EnemyController : MonoBehaviour
     public void Flip()
     {
         if (direction == FDirection.Left)
-          direction = FDirection.Right;
+            direction = FDirection.Right;
         else
             direction = FDirection.Left;
     }
 
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TakeDamage();
-        }
-    }
 }

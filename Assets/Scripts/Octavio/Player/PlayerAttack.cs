@@ -3,6 +3,8 @@ using UnityEngine.Events;
 
 public class PlayerAttack : PlayerComp
 {
+    public string TagEnemy = "Damageable";
+
     public UnityEvent OnAttack;
 
     private EnemyController enemyNear;
@@ -12,9 +14,11 @@ public class PlayerAttack : PlayerComp
 
     public void Attack()
     {
+        if (controller.IsDead) return;
         if (enemyNear == null) return;
         if (!CanAttack) return;
         if (IsAttacking) return;
+        if (enemyNear.IsDead) return;
 
         IsAttacking = true;
         CanAttack = false;
@@ -22,14 +26,26 @@ public class PlayerAttack : PlayerComp
         SequenceController.Instance.PlayEnemyDefeatSequence(enemyNear, this);
 
         enemyNear = null;
-        enemyNear.gameObject.GetComponent<Rigidbody>().useGravity = false;
-        enemyNear.gameObject.GetComponent<Collider>().enabled = false;
     }
-
-    public void SetEnemy(EnemyController enemyNear)
+    public void SetEnemy(EnemyController enemy)
     {
         if (IsAttacking) return;
 
-        this.enemyNear = enemyNear;
+        enemyNear = enemy;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(TagEnemy))
+        {
+            controller.PlayerDie();
+        }
+    }
+
+    public void ResetAttack()
+    {
+        enemyNear = null;
+        CanAttack = false;
+        IsAttacking = false;
     }
 }

@@ -37,22 +37,26 @@ public class PlayerDistanceDetector : PlayerComp
         {
             nextObstacle.typeTarget = TypeTarget.None;
             nextObstacle.distance = Mathf.Infinity;
+            nextObstacle.GO_Ref = null;
         }
 
         Debug.DrawRay(transform.position, dir * rayDistance, Color.red);
     }
 
-
     public EnemyController DetectEnemy()
     {
         if (nextObstacle.typeTarget == TypeTarget.Enemy)
         {
-            nextObstacle.GO_Ref.TryGetComponent(out EnemyController enemy);
+            if (nextObstacle.GO_Ref != null &&
+                nextObstacle.GO_Ref.TryGetComponent(out EnemyController enemy))
+            {
+                if (enemy.IsDead)
+                    return null;
 
-
-
-            return enemy;
+                return enemy;
+            }
         }
+
         return null;
     }
 }

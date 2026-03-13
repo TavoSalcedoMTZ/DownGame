@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &847652877896759846
 Transform:
   m_ObjectHideFlags: 0
@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe49506027c04bd42ae1a1a98391e211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  TagEnemy: Damageable
   OnAttack:
     m_PersistentCalls:
       m_Calls:
@@ -434,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMeshController
   mesh: {fileID: 868216987637486847}
+  rotationSpeed: 10
 --- !u!1 &8885549732836847342
 GameObject:
   m_ObjectHideFlags: 0

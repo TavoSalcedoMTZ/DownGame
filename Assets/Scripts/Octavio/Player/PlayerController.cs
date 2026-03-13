@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public PlayerMeshController meshController;
 
     public FDirection direction;
+    public bool IsDead;
 
     public Vector3 GetDirectionVector()
     {
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     public void EnemyNear()
     {
+        if (IsDead) return;
+
         if (attack.IsAttacking)
             return;
 
@@ -40,5 +43,24 @@ public class PlayerController : MonoBehaviour
         {
             attack.SetEnemy(null);
         }
+    }
+
+    public void PlayerDie()
+    {
+        if (IsDead) return;
+
+        IsDead = true;
+
+        attack.ResetAttack();
+
+        Debug.Log("Player died");
+
+        GameManager.Instance.Lost();
+    }
+
+    public void MovePlayer( Vector3 positionToMove)
+    {
+        gameObject.transform.position = positionToMove;
+        IsDead = false;
     }
 }

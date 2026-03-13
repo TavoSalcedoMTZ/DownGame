@@ -8,28 +8,27 @@ public class SequenceController : MonoBehaviour
     public static SequenceController Instance;
 
     public CinemachineCamera cinemachine;
-
+    public bool IsPlayingSequence;
     void Awake()
     {
         Instance = this;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            StartCoroutine(ZoomInAndOut());
-        }
-    }
+
 
     public void PlayEnemyDefeatSequence(EnemyController enemy, PlayerAttack attack)
     {
+        if (IsPlayingSequence) return;
+
+        IsPlayingSequence = true;
+
         attack.CanAttack = false;
 
         StartCoroutine(EnemyDefeatSequence(enemy, () =>
         {
             attack.CanAttack = true;
             attack.IsAttacking = false;
+            IsPlayingSequence = false;
         }));
     }
 
