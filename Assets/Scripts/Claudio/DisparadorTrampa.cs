@@ -24,6 +24,9 @@ public class DisparadorTrampa : MonoBehaviour
 
     void Disparar()
     {
+
         Instantiate(prefabProyectil, puntoDeDisparo.position, puntoDeDisparo.rotation);
+
     }
+
 }
