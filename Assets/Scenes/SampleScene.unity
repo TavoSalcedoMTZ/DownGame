@@ -2069,6 +2069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerReal
       objectReference: {fileID: 0}
+    - target: {fileID: 9031139147606808696, guid: e0c2d4b2f8c8d184fae58f1eadce2934, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5751,6 +5755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1446812157378354370, guid: a8bc217e81a68eb4799becadb0e1f461, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5511746396843400456, guid: a8bc217e81a68eb4799becadb0e1f461, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6303,6 +6311,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 610630450892541560, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446812157378354370, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
+      propertyPath: m_AngularDamping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7802273237488952333, guid: 25227dcfb461ee14ba9f364030c592c8, type: 3}
