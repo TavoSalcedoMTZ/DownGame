@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour
     public EnemyUI enemyUI;
     public Collider col;
     public EnemyFX enemyFX;
+    public EnemyMesh enemyMesh;
 
     public FDirection direction;
 
@@ -23,6 +24,11 @@ public class EnemyController : MonoBehaviour
             col.enabled = false;
 
         enemyFX.StartDieSequence();
+    }
+
+    public void Update()
+    {
+        enemyMesh.UpdateDirection(direction);
     }
 
     public Vector3 GetDirectionVector()

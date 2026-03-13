@@ -306,7 +306,7 @@ MonoBehaviour:
     triggerDistance: 1
     action: 3
   - targetType: 5
-    triggerDistance: 0.4715852
+    triggerDistance: 0.6724865
     action: 1
 --- !u!114 &829286041151433827
 MonoBehaviour:
@@ -327,6 +327,7 @@ MonoBehaviour:
   attack: {fileID: 2764599152811496084}
   meshController: {fileID: 639763633955820602}
   direction: 1
+  IsDead: 0
 --- !u!114 &8338059362685668530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +371,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  enemyNear: {fileID: 0}
   CanAttack: 0
   IsAttacking: 0
 --- !u!136 &8627410680085114964

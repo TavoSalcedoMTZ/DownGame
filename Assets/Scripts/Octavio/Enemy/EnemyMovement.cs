@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (CanMove)
             Move();
+
     }
 
     void Move()
@@ -25,6 +26,8 @@ public class EnemyMovement : MonoBehaviour
             rb.linearVelocity.y,
             rb.linearVelocity.z
         );
+
+      
     }
 
     public void Stop()

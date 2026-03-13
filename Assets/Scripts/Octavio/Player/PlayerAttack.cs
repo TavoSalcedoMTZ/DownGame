@@ -48,4 +48,12 @@ public class PlayerAttack : PlayerComp
         CanAttack = false;
         IsAttacking = false;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag(TagEnemy))
+        {
+            controller.PlayerDie();
+        }
+    }
 }
