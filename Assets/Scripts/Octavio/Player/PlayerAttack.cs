@@ -7,7 +7,7 @@ public class PlayerAttack : PlayerComp
 
     public UnityEvent OnAttack;
 
-    private EnemyController enemyNear;
+    public EnemyController enemyNear;
 
     public bool CanAttack;
     public bool IsAttacking;

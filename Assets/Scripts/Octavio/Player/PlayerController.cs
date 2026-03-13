@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public FDirection direction;
     public bool IsDead;
 
+    EnemyController currentEnemy;
+
     public Vector3 GetDirectionVector()
     {
         return direction == FDirection.Left ? Vector3.left : Vector3.right;
@@ -20,7 +22,6 @@ public class PlayerController : MonoBehaviour
     public void ChangeDirection()
     {
         direction = direction == FDirection.Left ? FDirection.Right : FDirection.Left;
-
         meshController.UpdateDirection(direction);
     }
 
@@ -28,20 +29,42 @@ public class PlayerController : MonoBehaviour
     {
         if (IsDead) return;
 
-        if (attack.IsAttacking)
-            return;
+        DistanceInfo info = distanceDetector.nextObstacle;
 
-        EnemyController enemy = distanceDetector.DetectEnemy();
+        EnemyController detectedEnemy = null;
 
-        if (enemy != null)
+        if (info.typeTarget == TypeTarget.Enemy && info.GO_Ref != null)
         {
-            attack.SetEnemy(enemy);
-            enemy.enemyUI.ShowParryIndicator();
-            attack.CanAttack = true;
+            info.GO_Ref.TryGetComponent(out detectedEnemy);
         }
-        else
+
+        if (detectedEnemy != null && !detectedEnemy.IsDead)
         {
+            if (currentEnemy != detectedEnemy)
+            {
+                ClearEnemy();
+
+                currentEnemy = detectedEnemy;
+
+                attack.SetEnemy(currentEnemy);
+                attack.CanAttack = true;
+
+                currentEnemy.enemyUI.ShowParryIndicator();
+            }
+
+            return;
+        }
+
+        ClearEnemy();
+    }
+
+    void ClearEnemy()
+    {
+        if (currentEnemy != null)
+        {
+            currentEnemy.enemyUI.HideParryIndicator();
             attack.SetEnemy(null);
+            currentEnemy = null;
         }
     }
 
@@ -51,6 +74,7 @@ public class PlayerController : MonoBehaviour
 
         IsDead = true;
 
+        ClearEnemy();
         attack.ResetAttack();
 
         Debug.Log("Player died");
@@ -58,9 +82,9 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.Lost();
     }
 
-    public void MovePlayer( Vector3 positionToMove)
+    public void MovePlayer(Vector3 positionToMove)
     {
-        gameObject.transform.position = positionToMove;
+        transform.position = positionToMove;
         IsDead = false;
     }
 }
