@@ -1357,7 +1357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471270809713941422, guid: 10d05cb3810e4c74fa230a9906ccad1d, type: 3}
       propertyPath: holdAction.action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Start
+      value: StartMenu
       objectReference: {fileID: 0}
     - target: {fileID: 471270809713941422, guid: 10d05cb3810e4c74fa230a9906ccad1d, type: 3}
       propertyPath: tapActions.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1365,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471270809713941422, guid: 10d05cb3810e4c74fa230a9906ccad1d, type: 3}
       propertyPath: tapActions.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Start
+      value: StartMenu
       objectReference: {fileID: 0}
     - target: {fileID: 4533042529302847512, guid: 10d05cb3810e4c74fa230a9906ccad1d, type: 3}
       propertyPath: m_LocalPosition.x
