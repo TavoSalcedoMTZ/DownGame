@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         ClearEnemy();
     }
 
-    void ClearEnemy()
+    public void ClearEnemy()
     {
         if (currentEnemy != null)
         {

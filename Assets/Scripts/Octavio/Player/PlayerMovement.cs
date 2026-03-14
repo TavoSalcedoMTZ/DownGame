@@ -126,7 +126,7 @@ public class PlayerMovement : PlayerComp
         isDropping = false;
 
         distanceAccumulator = 0f;
-
+        controller.ClearEnemy();
         Resume();
     }
 }
