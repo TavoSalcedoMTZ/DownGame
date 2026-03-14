@@ -39582,6 +39582,7 @@ GameObject:
   - component: {fileID: 6755808863127018778}
   - component: {fileID: 3068416872219358929}
   - component: {fileID: 419350160233133078}
+  - component: {fileID: 912929259076496456}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Damageable
@@ -39794,6 +39795,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMesh
   mesh: {fileID: 5611540343263313933}
+--- !u!114 &912929259076496456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802273237488952333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94e4c119ec123f40868396c612deee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioTimer
+  delay: 2.5
+  index: 3
 --- !u!1 &8803286388271441081
 GameObject:
   m_ObjectHideFlags: 0

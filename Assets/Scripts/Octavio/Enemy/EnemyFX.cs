@@ -19,6 +19,7 @@ public class EnemyFX : MonoBehaviour
     {
         float delay = hitEffect.main.duration * 0.85f;
         hitEffect.Play();
+        AudioManager.Play(2, transform.position);
         yield return delay;
         DieParticle.Play();
         yield return delay;

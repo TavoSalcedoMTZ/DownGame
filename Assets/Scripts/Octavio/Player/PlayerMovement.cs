@@ -11,10 +11,33 @@ public class PlayerMovement : PlayerComp
     public bool canMove = true;
     public bool canDown = true;
 
+    public float stepDistance = 1.2f;
+
+    float distanceAccumulator;
+    Vector3 lastPosition;
+
+    AudioSource stepSource;
+    AudioDataResult? stepAudio;
+
+    bool isDropping;
+
+    void Start()
+    {
+        lastPosition = transform.position;
+
+        stepAudio = AudioManager.Library.GetAudio(0);
+
+        stepSource = gameObject.AddComponent<AudioSource>();
+        stepSource.playOnAwake = false;
+    }
+
     void Update()
     {
         if (canMove)
             Move();
+
+        if (!isDropping)
+            HandleFootsteps();
     }
 
     public void Move()
@@ -28,6 +51,30 @@ public class PlayerMovement : PlayerComp
             rb.linearVelocity.y,
             rb.linearVelocity.z
         );
+    }
+
+    void HandleFootsteps()
+    {
+        if (stepAudio == null)
+            return;
+
+        float distance = Vector3.Distance(transform.position, lastPosition);
+        distanceAccumulator += distance;
+
+        if (distanceAccumulator >= stepDistance)
+        {
+            stepSource.transform.position = transform.position;
+            stepSource.spatialBlend = stepAudio.Value.Space == AudioSpace.ThreeD ? 1f : 0f;
+
+            stepSource.PlayOneShot(
+                stepAudio.Value.Clip,
+                stepAudio.Value.Volume
+            );
+
+            distanceAccumulator = 0f;
+        }
+
+        lastPosition = transform.position;
     }
 
     public void Stop()
@@ -44,15 +91,19 @@ public class PlayerMovement : PlayerComp
     public void Down()
     {
         if (canDown)
-        {
             StartCoroutine(DownRoutine());
-        }
+
         Debug.Log("Down");
     }
 
     IEnumerator DownRoutine()
     {
         Stop();
+
+        isDropping = true;
+
+       
+        AudioManager.Play(1, transform.position);
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
@@ -71,6 +122,10 @@ public class PlayerMovement : PlayerComp
         controller.floorDetector.ResetIgnoredFloor();
 
         canDown = true;
+
+        isDropping = false;
+
+        distanceAccumulator = 0f;
 
         Resume();
     }

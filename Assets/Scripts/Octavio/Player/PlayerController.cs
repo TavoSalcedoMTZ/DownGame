@@ -80,11 +80,13 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player died");
 
         GameManager.Instance.Lost();
+        AudioManager.Play("die", transform.position);
     }
 
     public void MovePlayer(Vector3 positionToMove)
     {
         transform.position = positionToMove;
         IsDead = false;
+        AudioManager.Play("respawn", transform.position);
     }
 }

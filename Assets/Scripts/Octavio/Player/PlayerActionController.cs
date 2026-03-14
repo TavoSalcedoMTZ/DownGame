@@ -4,15 +4,13 @@ public class PlayerActionController : PlayerComp
 {
     public ActionRule[] rules;
 
-    void Update()
+    void Start()
     {
-        EvaluateRules();
+        controller.distanceDetector.OnObstacleUpdated += EvaluateRules;
     }
 
-    void EvaluateRules()
+    void EvaluateRules(DistanceInfo info)
     {
-        DistanceInfo info = controller.distanceDetector.nextObstacle;
-
         foreach (var rule in rules)
         {
             if (info.typeTarget == rule.targetType &&
@@ -35,9 +33,9 @@ public class PlayerActionController : PlayerComp
             case PlayerActionType.Stop:
                 controller.movement.Stop();
                 break;
-             case PlayerActionType.DetectEnemy:
-                controller.EnemyNear();
 
+            case PlayerActionType.DetectEnemy:
+                controller.EnemyNear();
                 break;
         }
     }
